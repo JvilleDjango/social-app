@@ -1,0 +1,50 @@
+.helm {
+  .MuiList-root {
+    padding: 10px;
+
+    .MuiTypography-root {
+      font-size: 0.85rem;
+    }
+
+    .MuiButtonBase-root {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      // padding: 13px 15px;
+      &:hover {
+        border-radius: 5px;
+      }
+
+      .MuiListItemIcon-root {
+        min-width: 0px;
+
+        svg {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+
+  .MuiToolbar-root {
+    background-color: var(--blue) !important;
+  }
+
+  a {
+    color: var(--grey);
+    margin-bottom: 5px;
+  }
+
+  .active {
+    background: rgba(58, 85, 125, 0.15);
+    border-radius: 5px;
+    .MuiListItemText-root {
+      color: var(--blue);
+      svg {
+        color: var(--blue);
+      }
+    }
+  }
+}

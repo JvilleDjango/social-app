@@ -1,0 +1,54 @@
+.main-template {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "menu header header"
+    "menu main main";
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 100px 1fr;
+  height: 100%;
+  grid-template-rows: auto 80vh;
+
+  .header-content {
+    grid-area: header;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+    padding: 0.625rem;
+
+    .logo {
+      width: 85px;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .left-content {
+    grid-area: menu;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    text-align: center;
+  }
+
+  .right-content {
+    grid-area: main;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .left-content,
+  .right-content,
+  .header-content {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "id": "unique_user_id",
+    "name": "User Name",
+    "profilePicture": "url_to_profile_picture",
+    "bio": "Short user bio",
+    "friends": [
+        "friend_id1",
+        "friend_id2"
+    ]
+}

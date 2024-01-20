@@ -1,0 +1,28 @@
+.main-layout {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "main main";
+  grid-template-columns: 75px 1fr;
+  background-color: rgba(24, 38, 59, 0.15);
+  min-height: 100vh;
+  min-height: 100dvh;
+  grid-template-rows: 8vh auto;
+
+  .mast-head {
+    grid-area: header;
+  }
+
+  .stern {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deck {
+    grid-area: main;
+    padding: 10px;
+  }
+}
