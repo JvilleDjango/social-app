@@ -1,6 +1,8 @@
-.post-card {
+.card {
   transition: all 0.2s ease-in-out;
+  // border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: none;
+  margin-bottom: 10px;
 
   &:hover {
     cursor: pointer;
@@ -10,19 +12,13 @@
   a {
     height: 100%;
   }
-
-  &.owner {
-    background-color: var(--secondary-color-analogous-blue);
-  }
-
-  &.recipient {
-    background-color: var(--secondary-color-analogous-green);
-  }
-
-
   &.MuiPaper-root.MuiCard-root {
     box-shadow: none;
     border-radius: 5px;
+  }
+
+  .MuiTypography-root {
+    flex: 2;
   }
   .MuiCardActionArea-root {
     display: flex;
@@ -32,8 +28,14 @@
       opacity: 1;
     }
 
+    .divider {
+      padding: 0 15px;
 
-    
+      .MuiSvgIcon-root {
+        font-size: 1rem;
+        color: var(--light-blue) !important;
+      }
+    }
   }
 
   .MuiCardHeader-content {

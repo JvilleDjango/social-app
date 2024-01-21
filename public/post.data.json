@@ -1,17 +1,145 @@
-{
-    "id": "unique_post_id",
-    "userId": "user_id_of_post_creator",
-    "content": "Post content here",
-    "timestamp": "post_creation_timestamp",
-    "comments": [
-        {
-            "userId": "commenting_user_id",
-            "comment": "Comment text",
-            "timestamp": "comment_timestamp"
-        }
-    ],
-    "likes": [
-        "user_id1",
-        "user_id2"
-    ]
-}
+[
+    {
+        "userId": "user_id_1",
+        "username": "William Munny",
+        "timestamp": "2021-01-01T12:00:00Z",
+        "conversationId": "unique_conversation_id_1",
+        "messages": [
+            {
+                "messageId": "message_id_1",
+                "senderId": "user_id_1",
+                "timestamp": "2022-01-20T15:30:00Z",
+                "content": "Deserve's got nothin' to do with it."
+            },
+            {
+                "messageId": "message_id_2",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:35:00Z",
+                "content": "We all have it comin,' kid."
+            },
+            {
+                "messageId": "message_id_4",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:45:00Z",
+                "content": "He should have armed himself... if he's going to decorate his saloon with my friend."
+            }
+        ]
+    },
+    {
+        "userId": "user_id_2",
+        "username": "The Man with no name",
+        "timestamp": "2021-02-01T14:30:00Z",
+        "conversationId": "unique_conversation_id_2",
+        "messages": [
+            {
+                "messageId": "message_id_1",
+                "senderId": "user_id_2",
+                "timestamp": "2022-01-20T15:30:00Z",
+                "content": "I've had a poker hand waiting for me for three days! Now I'm stuck here; I can't get back to it while I'm guarding this Americano idiot!"
+            },
+            {
+                "messageId": "message_id_2",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:35:00Z",
+                "content": " I think you will find this more amusing than cards. Our orders are to be sure he does not die, but also make sure he regrets the day he was born. The gringo's asleep, I imagine. That's all right, I'll enjoy waking him up!"
+            }
+        ]
+    },
+    {
+        "userId": "user_id_3",
+        "username": "Preacher",
+        "timestamp": "2021-03-05T16:20:00Z",
+        "conversationId": "unique_conversation_id_3",
+        "messages": [
+            {
+                "messageId": "message_id_1",
+                "senderId": "user_id_3",
+                "timestamp": "2022-01-20T15:30:00Z",
+                "content": "Hello, how are you?"
+            },
+            {
+                "messageId": "message_id_3",
+                "senderId": "user_id_3",
+                "timestamp": "2022-01-20T15:40:00Z",
+                "content": "I'm good too. Any plans for the weekend?"
+            },
+            {
+                "messageId": "message_id_2",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:35:00Z",
+                "content": "I'm doing well, thanks! How about you?"
+            },
+            {
+                "messageId": "message_id_4",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:45:00Z",
+                "content": "Not sure yet. Maybe catch a movie?"
+            }
+        ]
+    },
+    {
+        "userId": "user_id_4",
+        "username": "Marshall Jed Cooper ",
+        "timestamp": "2021-04-10T09:30:00Z",
+        "conversationId": "unique_conversation_id_4",
+        "messages": [
+           
+            {
+                "messageId": "message_id_2",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:35:00Z",
+                "content": "I'm doing well, thanks! How about you?"
+            },
+            {
+                "messageId": "message_id_3",
+                "senderId": "user_id_4",
+                "timestamp": "2022-01-20T15:40:00Z",
+                "content": "I'm good too. Any plans for the weekend?"
+            },
+            {
+                "messageId": "message_id_1",
+                "senderId": "user_id_4",
+                "timestamp": "2022-01-20T15:30:00Z",
+                "content": "Hello, how are you?"
+            },
+            {
+                "messageId": "message_id_4",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:45:00Z",
+                "content": "Not sure yet. Maybe catch a movie?"
+            }
+        ]
+    },
+    {
+        "userId": "user_id_5",
+        "username": "Joe Kidd",
+        "timestamp": "2021-05-12T10:40:00Z",
+        "conversationId": "unique_conversation_id_5",
+        "messages": [
+            {
+                "messageId": "message_id_1",
+                "senderId": "user_id_5",
+                "timestamp": "2022-01-20T15:30:00Z",
+                "content": "Hello, how are you?"
+            },
+            {
+                "messageId": "message_id_2",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:35:00Z",
+                "content": "I'm doing well, thanks! How about you?"
+            },
+            {
+                "messageId": "message_id_3",
+                "senderId": "user_id_5",
+                "timestamp": "2022-01-20T15:40:00Z",
+                "content": "I'm good too. Any plans for the weekend?"
+            },
+            {
+                "messageId": "message_id_4",
+                "senderId": "host_id_1",
+                "timestamp": "2022-01-20T15:45:00Z",
+                "content": "Not sure yet. Maybe catch a movie?"
+            }
+        ]
+    }
+]

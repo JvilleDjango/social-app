@@ -1,0 +1,72 @@
+.post-details {
+  .MuiPaper-root {
+    width: fit-content;
+  }
+
+  &-card {
+    transition: all 0.2s ease-in-out;
+    box-shadow: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    a {
+      height: 100%;
+    }
+
+    &.host {
+      background-color: var(--secondary-color-analogous-blue);
+    }
+
+    &.recipient {
+      background-color: var(--secondary-color-analogous-green);
+      margin-left: auto;
+     
+    }
+    &.host,
+    &.recipient {
+      max-width: 50%;
+      .MuiTypography-root {
+        color: #fff;
+      }
+
+      margin-bottom: 25px;
+    }
+
+    &.MuiPaper-root.MuiCard-root {
+      box-shadow: none;
+      border-radius: 5px;
+    }
+    .MuiCardContent-root {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .MuiCardHeader-content {
+      text-align: left !important;
+
+      .MuiTypography-body2 {
+        &:nth-of-type(2) {
+          font-size: 0.738rem;
+          font-weight: 300;
+          line-height: 1.1875em;
+        }
+      }
+    }
+
+    .MuiAvatar-root {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .MuiAvatar-img {
+      height: auto;
+    }
+  }
+}
