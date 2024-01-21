@@ -8,7 +8,8 @@ module.exports = function override(config) {
     "@routes": path.resolve(__dirname, "src/routes/"),
     "@layouts": path.resolve(__dirname, "src/layouts/"),
     "@configs": path.resolve(__dirname, "src/configs/"),
-    "@assets": path.resolve(__dirname, "src/assets/")
+    "@assets": path.resolve(__dirname, "src/assets/"),
+    "@api": path.resolve(__dirname, "src/api/"),
   };
 
   return config;

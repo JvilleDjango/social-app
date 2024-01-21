@@ -1,0 +1,17 @@
+{
+    "id": "unique_post_id",
+    "userId": "user_id_of_post_creator",
+    "content": "Post content here",
+    "timestamp": "post_creation_timestamp",
+    "comments": [
+        {
+            "userId": "commenting_user_id",
+            "comment": "Comment text",
+            "timestamp": "comment_timestamp"
+        }
+    ],
+    "likes": [
+        "user_id1",
+        "user_id2"
+    ]
+}

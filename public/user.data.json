@@ -1,7 +1,7 @@
 {
     "id": "josey_wales@cs.com",
     "name": "Josey Wales",
-    "profilePicture": "/src/assets/profile.jpg",
+    "profilePicture": "profile.jpg",
     "bio": "Short user bio",
     "friends": [
         "friend_id1",

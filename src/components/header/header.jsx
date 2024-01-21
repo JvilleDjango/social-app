@@ -9,7 +9,7 @@ const Header = () => {
       <div className="logo">My Social App</div>
 
       <div className="mast-head__actions--right">
-        <AccountMenu currentUser="Current User" />
+        {/* <AccountMenu currentUser="Current User" /> */}
       </div>
     </section>
   );
