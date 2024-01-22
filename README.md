@@ -7,6 +7,8 @@ Screen for listing mock posts from friends and a detail view of the posts
 Placeholders for what good data structures for users and posts and friends
 Mock API calls and data as needed
 
+----------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

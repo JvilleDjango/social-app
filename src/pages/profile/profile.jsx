@@ -6,10 +6,13 @@ import axios from "axios";
 import graph from "@assets/graph.png";
 import EditIcon from "@mui/icons-material/Edit";
 import { IconButton, Avatar, AvatarGroup } from "@mui/material";
+import { deepPurple, blue, green, red, yellow } from "@mui/material/colors";
 
 const Profile = () => {
   const [userData, setUserData] = useState(null);
   const [profilePic, setProfilePic] = useState(null);
+
+  const colors = [deepPurple[500], blue[500], green[500], red[500], yellow[500]];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,8 +54,13 @@ const Profile = () => {
           <p>{userData.bio}</p>
           <h4>Friends</h4>
           <AvatarGroup max={4}>
-            {userData.friends.map((friend) => (
-              <Avatar key={friend} alt={friend} src="/static/images/avatar/1.jpg" />
+            {userData.friends.map((friend, i) => (
+              <Avatar
+                key={i}
+                alt={friend}
+                src="/static/images/avatar/1.jpg"
+                sx={{ bgcolor: colors[i % colors.length] }}
+              />
             ))}
           </AvatarGroup>
         </div>
