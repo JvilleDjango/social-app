@@ -14,20 +14,10 @@ const PageHeader = ({ headers }) => {
 
   return (
     <div className="page-header">
-      <Typography variant="h4" gutterBottom>
-        {pathname === "/"
-          ? "Dashboard"
-          : pathname === "/my-account"
-          ? "My Account"
-          : page?.pageHeader}
+      <Typography variant="h2" gutterBottom>
+        {page?.pageHeader}
       </Typography>
-      <Typography variant="body2">
-        {pathname === "/"
-          ? "All your metrics"
-          : pathname === "/my-account"
-          ? "Update your information"
-          : page?.pageSubHeader}
-      </Typography>
+      <Typography variant="body2">{page?.pageSubHeader}</Typography>
     </div>
   );
 };

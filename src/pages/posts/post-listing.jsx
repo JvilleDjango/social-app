@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Cards from "@components/card";
 import PostDetails from "./post-details";
+import { Typography } from "@mui/material";
 
 const PostListing = () => {
   const [postData, setPostData] = useState([]);
@@ -33,6 +34,9 @@ const PostListing = () => {
   return (
     <section className="post-listing">
       <aside>
+        <header>
+          <Typography>Conversations</Typography>
+        </header>
         {Array.isArray(postData) &&
           postData.map((post) => (
             <Cards

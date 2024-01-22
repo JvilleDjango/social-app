@@ -2,9 +2,12 @@
     "id": "josey_wales@cs.com",
     "name": "Josey Wales",
     "profilePicture": "profile.jpg",
-    "bio": "Short user bio",
+    "bio": "The real Josey Wales was a Confederate guerilla fighter, a \"bushwacker,\" an associate of the bloody Quantrill Raiders, horse rustler, deadly shot, and killer of many. He was born William \"Bill\" Wilson in the Ozarks in Missouri of a well-to-do family. ",
     "friends": [
-        "friend_id1",
-        "friend_id2"
+        "William Munny",
+        "The Man with no name",
+        "Preacher",
+        "Marshall Jed Cooper",
+        "Joe Kidd"
     ]
 }

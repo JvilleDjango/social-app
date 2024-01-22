@@ -5,6 +5,7 @@ import axios from "axios";
 
 import graph from "@assets/graph.png";
 import EditIcon from "@mui/icons-material/Edit";
+import { IconButton, Avatar, AvatarGroup } from "@mui/material";
 
 const Profile = () => {
   const [userData, setUserData] = useState(null);
@@ -12,22 +13,22 @@ const Profile = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-        try {
-            const response = await axios.get("/user.data.json");
+      try {
+        const response = await axios.get("/user.data.json");
 
-            const data = response.data;
+        const data = response.data;
 
-            const image = await import(`../../assets/${data.profilePicture}`);
-            setProfilePic(image.default);
+        const image = await import(`../../assets/${data.profilePicture}`);
+        setProfilePic(image.default);
 
-            setUserData(data);
-        } catch (error) {
-            console.error("Error fetching data: ", error);
-        }
+        setUserData(data);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
     };
 
     fetchData();
-}, []);
+  }, []);
 
   if (!userData) {
     return <div>Loading...</div>;
@@ -37,22 +38,23 @@ const Profile = () => {
     <section className="profile">
       <aside>
         <header>
-          <EditIcon />
+          <IconButton aria-label="delete">
+            <EditIcon />
+          </IconButton>
         </header>
         <figure>
-    
-          {profilePic && <img src={profilePic} alt={userData.name} style={{ maxWidth: "200px" }}/>}
+          {profilePic && <img src={profilePic} alt={userData.name} style={{ maxWidth: "200px" }} />}
         </figure>
         <div className="profile-information">
           <div className="profile-information-id">{userData.id}</div>
-          <h2> {userData.name}</h2>
-          <p>Bio: {userData.bio}</p>
-          <h3>Friends List:</h3>
-          <ul>
+          <h3>{userData.name}</h3>
+          <p>{userData.bio}</p>
+          <h4>Friends</h4>
+          <AvatarGroup max={4}>
             {userData.friends.map((friend) => (
-              <li key={friend}>{friend}</li>
+              <Avatar key={friend} alt={friend} src="/static/images/avatar/1.jpg" />
             ))}
-          </ul>
+          </AvatarGroup>
         </div>
       </aside>
       <aside>
